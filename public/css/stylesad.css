@@ -1,0 +1,51 @@
+h1{
+    background-color:DodgerBlue;
+    font-family: 'Merienda', cursive;
+    text-align:center;
+}
+
+body{
+    background-color:antiquewhite;
+    font-family: 'Pacifico', cursive;
+}
+
+#channel1{
+    color:black;
+}
+#channel2{
+    color:black;
+}
+.tips {
+    border:dotted 5px;
+    width:400px;
+    margin-left:100px;
+    margin-top:100px;
+    height:350px;
+    width:600px;
+    padding:5px;
+text-align:center;
+    
+}
+
+
+.didyouknow {
+    border:dashed 5px;
+    margin-left:100px;
+    margin-top:80px;
+    height:350px;
+    width:600px;
+text-align: center;
+    
+}
+
+.music {
+    border:dashed 5px;
+    margin-left:100px;
+    margin-top:80px;
+    height:350px;
+    width:600px;
+text-align: center;
+
+
+    
+}

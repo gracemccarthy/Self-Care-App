@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>Self-Care Web</title>
+        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Bungee+Inline|Butcherman|Chela+One|Courgette|Creepster|Damion|Eater|Homemade+Apple|Kaushan+Script|Knewave|Leckerli+One|Lobster|Merienda|Mr+Dafoe|Nosifer|Pacifico|Permanent+Marker|Rock+Salt|Sancreek" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href= <%=url("css/stylemain.css")%>/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+         
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+            
+    </head>
+        
+      <body>  
+     
+     
+      <h1> Self Care </h1>
+<center>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://www.rover.com/blog/wp-content/uploads/2017/05/puppies-together-960x540.jpg" width = "400" height = "400">
+  <img class="mySlides" src="https://i.pinimg.com/736x/44/9f/f2/449ff2140cc4da56b186b0af58e6654f--friendship-best-friends.jpg" width = "400" height = "400">
+  <img class="mySlides" src="https://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_300/public/images/p_101395269.jpg" width = "400" height = "400">
+</div>
+</center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+  
+
+ 
+	
+          
+    
+    <form action = "/results" method = "POST">
+    <!--<label for = "moodchoice">-->
+    <!--    What is your mood?-->
+    <!--</label>-->
+    <!--<br>-->
+    <!--    <input list = "moods" name = "moodChoice">-->
+    <!--    <datalist id = "moods">-->
+    <!--        <option value = "Happy">-->
+    <!--        <option value = "Angry">-->
+    <!--        <option value = "Sad">-->
+    <!--    </datalist>-->
+    <br>
+    <label for = "frustration">
+        Today I feel frustrated...
+    </label>
+    <br>
+        <input list = "frustration" name = "frustrationMeasure">
+        <datalist id = "frustration">
+            <option value = "Yes">
+            <option value = "Not at all">
+            <option value = "I can't tell">
+        </datalist>
+    <br>
+    <label for = "energy">
+        Today I feel tired...
+    </label>
+    <br>
+        <input list = "energy" name = "energyMeasure">
+        <datalist id = "energy">
+            <option value = "Yes">
+            <option value = "Not at all">
+            <option value = "I can't tell">
+        </datalist>
+    <br>
+    <label for = "anxiety">
+        I am feeling anxious...
+    </label>
+    <br>
+        <input list = "anxiety" name = "anxietyMeasure">
+        <datalist id = "anxiety">
+            <option value = "Yes">
+            <option value = "Not at all">
+            <option value = "I can't tell">
+        </datalist>
+    <br>
+    <label for = "great">
+        Today is a great day...
+    </label>
+    <br>
+        <input list = "great" name = "greatMeasure">
+        <datalist id = "great">
+            <option value = "Totally">
+            <option value = "Hell no">
+            <option value = "I'm not feeling my best">
+        </datalist>
+    <br>
+    <label for = "color">
+        If I was a color right now I would be...
+    </label>
+    <br>
+        <input list = "color" name = "colorMeasure">
+        <datalist id = "color">
+            <option value = "Blue">
+            <option value = "Red">
+            <option value = "Yellow">
+        </datalist>
+    <br>
+    <label for = "laugh">
+        How much did you laugh today?
+    </label>
+    <br>
+        <input list = "laugh" name = "laughMeasure">
+        <datalist id = "laugh">
+            <option value = "More than I can count">
+            <option value = "A couple times">
+            <option value = "Maybe once">
+        </datalist>
+    <input type = "submit" value = "submit"/>
+    </form>
+
+    
+   
+   
+   
+   
+   
+    </body>
+</html>
+
